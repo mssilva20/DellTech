@@ -3,35 +3,210 @@
     margin: 0;
 }
 body{
-    margin: 5px;
+   
+    text-align: center;
+    background-color: #A4A4A8;
+    
+   
 }
 
 a{
-text-decoration: none;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 3px;
+    margin: 5px;
+   
+
  }
+  
+a:hover{
+    color:#b9997f;
+}
+li{
+    
+}
 
 .menu-logo{
-    
     text-align: right;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-right: 3px;
-    margin: 3px ;
-    height: 40px;
-   background: #313234;
+    background: #313131;
+    position: fixed;
+    display: flex;
+    width: 100%;    
+    z-index: 1050;
+}
+.menu-logo .logo h3{
+    
+    position: relative;
 }
 
-.imagem-um{
+.logo img{
+    margin: 10px;
+    width: 100px;
+    
+} 
+
+.container-menu {
     width: 100%;
-    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.section-dados{
+
+.menu-list{
+    list-style-type: none;
+}
+
+.menu-list li {
+    display: inline-block;
+}
+.icone{
+    font-size: 50px;
+    padding: 5px;
+}
+.icone.diferente {
+    background-color: #12c4ea;
+    border-radius: 5px;
+}
+.icone.diferente i {
+    color: #fff;
+}
+.menua {
+    position: relative;
+}
+.menua:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border: 1px solid #fff;
+    right: 0;
+    height: 100%;
+}
+
+.container-section{
+    margin: 15px 3px ;
+    height: 60px;
+}
+
+.dados{
+    display: inline-block;
+    width: 30%;
+    margin-top: 33px;
+    vertical-align: top;
+    
+}
+.dados > h1 {
+    margin-top: 7px;
+}
+.container-section{
+    margin-top: 0;
+    background-color: white;
+    height: 100%;
+}
+
+.section-dados .dados{
+    display: inline-block;
+    width: 50%;
 
 }
 
 .dados p{
-    display: inline-block;
-    text-align: justify;
-    width: 40%;
     
+    text-align: justify;
+    font-size: 15px;
+    padding: 18px;
+    
+    
+    
+}
+.feature{
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.galeria{
+    position: relative;
+}
+
+
+.spanh2 h2{
+   margin-bottom: 15px;
+ 
+    
+}
+
+.miniatura img{
+    display: inline-block;
+    border: 1px solid white;
+    margin: 0 5px 5px 0;
+   
+    
+}
+
+.miniatura:hover{
+    background-color: transparent;
+}
+
+.miniatura span{
+    position: absolute;
+    padding: 5px;
+    left: -1000px;
+    visibility: hidden;
+    color: black;
+    text-decoration: none;
+    width: 50%;
+    height: 35%;
+
+}
+.miniatura span img{
+    border-width: 0;
+    padding: 2px;
+    width: 150%;
+    height: fit-content;
+
+}
+.miniatura:hover span{
+    visibility: visible;
+    top:0;
+    left: 230px;
+    z-index: 50;
+  
+}
+.parteinferior{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+.parteinferior img{
+    width: 150px ;
+}
+
+.parteinferior h3{
+    text-align: cemter;
+}
+
+.item .item-img {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 130px;
+    width: 130px;
+    display: flex;
+}
+.item{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.tablet{
+  
+    background-color: white;
+    height: 324px;
+    display: grid;
+}
+
+.img-tablet{
+    margin-right: 300px;
+    margin-top: 37px;
 }
